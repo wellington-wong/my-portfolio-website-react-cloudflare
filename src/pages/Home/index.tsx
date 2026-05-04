@@ -31,7 +31,7 @@ const Home = () => {
           if (middleRef.current && missionRef.current && aboutRef.current) {
             let midCHeight = middleRef.current.clientHeight;
             let misCHeight = missionRef.current.clientHeight;
-            let abtCHeight = aboutRef.current.clientHeight;
+            let abtCHeight = aboutRef.current.clientHeight-50;
 
             let totalHeight = midCHeight + misCHeight + abtCHeight;
             let offsetTop = middleRef.current.offsetTop-150;
