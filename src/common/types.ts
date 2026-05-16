@@ -2,6 +2,7 @@ import { TFunction } from "react-i18next";
 export interface ContainerProps {
   border?: boolean;
   children: React.ReactNode;
+  className?: string;
 }
 
 export interface ButtonProps {
