@@ -9,7 +9,7 @@ const Router = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(()=>{
-    setIsLoaded(true);
+    setTimeout(()=>setIsLoaded(true), 100)
   }, [])
 
   return (
