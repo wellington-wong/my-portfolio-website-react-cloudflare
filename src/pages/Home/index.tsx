@@ -73,7 +73,7 @@ const Home = () => {
 
   return (
     <Suspense fallback={null}>
-      <Container>
+      <Container className="main-container">
         <ScrollToTop />
         <ContentBlock
           direction="right"
