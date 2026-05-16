@@ -11,7 +11,6 @@ export const StyledContainer = styled("div")<{
   padding: 0 60px;
   overflow: hidden;
   border-top: ${(p) => (p.border ? "1px solid #CDD1D4" : "")};
-  min-height: 1800px;
 
   @media only screen and (max-width: 1024px) {
     max-width: calc(100% - 68px);
