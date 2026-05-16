@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, useEffect } from "react";
+import { lazy, Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -6,11 +6,6 @@ import routes from "./config";
 import { Styles } from "../styles/styles";
 
 const Router = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(()=>{
-    setTimeout(()=>setIsLoaded(true), 100)
-  }, [])
 
   return (
     <Suspense fallback={null}>
@@ -28,7 +23,7 @@ const Router = () => {
           );
         })}
       </Switch>
-      {isLoaded && <Footer />}
+      <Footer />
     </Suspense>
   );
 };
