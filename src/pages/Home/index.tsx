@@ -1,4 +1,4 @@
-import { lazy, Suspense, useContext, useEffect, useRef } from "react";
+import { lazy, useContext, useEffect, useRef } from "react";
 import Clarity from "@microsoft/clarity";
 import { AppContext } from "../../context/AppContext"
 import IntroContent from "../../content/IntroContent.json";
